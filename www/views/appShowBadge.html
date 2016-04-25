@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+</head>
+<body>
+<ion-pane>
+	<ionic-header-bar class="bar bar-header bar-dark">
+        <h4 class="title">VISITOR BADGE</h4>
+        <div class="buttons">
+            <a class="button button-icon icon ion-close" ui-sref="/"></a>
+        </div>
+    </ionic-header-bar>
+    <ion-content class="has-header">
+        <div class="list card">
+            <div class="item item-avatar">
+                <img src="img/meet.jpg">
+                <div class="col text-center"><h2><b>Tyco Security Products</b></h2></div>
+            </div>
+            <div class="item item-body">
+                <img class="full-image" src="img/visitor.jpg">
+                <div class="row">
+                    <div class="col text-center"><h2><b>{{fullName}}</b></h2></div>
+                </div>
+                <div class="row row-center">
+                    <div class="col text-center">{{visitor.company}}</div>
+                </div>
+                <div class="row row-center">
+                    <div class="col text-center">Visiting: {{visitor.pov}}</div>
+                </div>
+                <div class="row row-center">
+                    <div class="col text-center">Purpose: {{visitor.rov}}</div>
+                </div>
+                <div class="row">
+                    <div class="col text-center"><b>{{cDate | date:'medium'}}</b></div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-pane>
+</body>
+</html>
